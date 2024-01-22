@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node Deletion Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            display: block; /* Make buttons block level for full width */
+            margin: 10px 0; /* Add some margin for spacing */
+            text-decoration: none; /* Remove underline from links */
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .home-button {
+            background-color: #008CBA;
+        }
+        .home-button:hover {
+            background-color: #007B9E;
+        }
+        .view-nodes-button {
+            background-color: #f44336;
+        }
+        .view-nodes-button:hover {
+            background-color: #d32f2f;
+        }
+        .deleted-node {
+            color: #d32f2f;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ message }}</h1>
+        {% if deleted_node %}
+            <p class="deleted-node">Deleted Node: {{ deleted_node }}</p>
+        {% endif %}
+        <a href="/nodes/delete" class="button">Delete Another Node</a>
+        <a href="/" class="home-button button">Return to Homepage</a>
+        <a href="/nodes/get" class="view-nodes-button button">View Nodes</a>
+    </div>
+</body>
+</html>

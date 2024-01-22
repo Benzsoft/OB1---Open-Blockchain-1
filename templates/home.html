@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Blockchain</h1>
+        <a href="/mine" class="button">Mine a Block</a>
+        <a href="/transactions/new" class="button">Create Transaction</a>
+        <a href="/chain" class="button">View Blockchain</a>
+        <a href="/nodes/register" class="button">Register Node</a>
+        <a href="/nodes/get" class="button">View Nodes</a>
+        <a href="/nodes/delete" class="button">Delete Node</a>
+        <a href="/nodes/resolve" class="button">Resolve Conflicts</a>
+        <!-- Add any other buttons for additional functionalities here -->
+        <a href="/" class="button">Home</a>
+    </div>
+    <footer>
+        <p>Designed by <a href="http://abc.com" target="_blank">tem10w</a></p>
+    </footer>
+</body>
+</html>

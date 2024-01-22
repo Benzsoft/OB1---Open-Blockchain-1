@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Blockchain</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain</h1>
+        <table>
+            <tr>
+                <th>Index</th>
+                <th>Timestamp</th>
+                <th>Transactions</th>
+                <th>Proof</th>
+                <th>Previous Hash</th>
+            </tr>
+            {% for block in chain %}
+                <tr>
+                    <td>{{ block.index }}</td>
+                    <td>{{ block.timestamp }}</td>
+                    <td>
+                        <ul>
+                            {% for transaction in block.transactions %}
+                                <li>
+                                    Sender: {{ transaction.sender }} -
+                                    Recipient: {{ transaction.recipient }} -
+                                    Amount: {{ transaction.amount }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>{{ block.proof }}</td>
+                    <td>{{ block.previous_hash }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="/" class="home-button">Home</a>
+    </div>
+</body>
+</html>

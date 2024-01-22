@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Node</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete a Node</h1>
+        <form action="/nodes/delete" method="post">
+            <div class="form-group">
+                <label for="node">Node Address:</label>
+                <input type="text" id="node" name="node" class="form-control" required>
+            </div>
+            <button type="submit" class="button">Delete Node</button>
+        </form>
+        <a href="/" class="button">Return to Homepage</a>
+    </div>
+    <footer>
+        <p>Designed by <a href="http://abc.com" target="_blank">tem10w</a></p>
+    </footer>
+</body>
+</html>

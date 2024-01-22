@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node Registration Result</title>
+    <style>
+        /* Common CSS styling */
+        /* ... */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .home-button {
+            background-color: #008CBA;
+        }
+        .home-button:hover {
+            background-color: #007B9E;
+        }
+        .view-nodes-button {
+            background-color: #f44336;
+        }
+        .view-nodes-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ message }}</h1>
+        <table>
+            <tr>
+                <th>Node Address</th>
+                <!-- Additional columns if needed -->
+            </tr>
+            {% for node in nodes %}
+                <tr>
+                    <td>{{ node }}</td>
+                    <!-- Additional details columns -->
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="/nodes/register" class="button">Create New Node</a>
+        <a href="/" class="home-button button">Return to Homepage</a>
+        <a href="/nodes/get" class="view-nodes-button button">View Nodes</a>
+    </div>
+</body>
+</html>

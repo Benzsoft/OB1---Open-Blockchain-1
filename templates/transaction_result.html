@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Result</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7e7e7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ message }}</h1>
+        <p>Transaction Details:</p>
+        <ul>
+            <li>Sender: {{ transaction.sender }}</li>
+            <li>Recipient: {{ transaction.recipient }}</li>
+            <li>Amount: {{ transaction.amount }}</li>
+        </ul>
+        <p>This transaction will be added to Block {{ block_index }}.</p>
+        <a href="/transactions/new" class="button">Create New Transaction</a>
+        <a href="/" class="button">Return to Homepage</a>
+    </div>
+</body>
+</html>
