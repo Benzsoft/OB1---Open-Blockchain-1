@@ -1,4 +1,5 @@
 
+
 # OB1: Our Blockchain 1
 
 Welcome to OB1 (Our Blockchain 1), a foundational blockchain implementation designed to demystify and illustrate the core concepts of blockchain technology. Built with Python and Flask, OB1 offers hands-on experience in understanding how blockchains operate.
@@ -75,7 +76,7 @@ https://github.com/Benzsoft/
 
 ---
 
-Designed by tem10w - [Visit Website](http://abc.com)   
+Designed by tem10w - [Visit Website](berkhosconsulting.dao)   
 
 Credits to [Daniel van Flymen](https://medium.com/@vanflymen) for the initial code
 
