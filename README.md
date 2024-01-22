@@ -75,8 +75,8 @@ https://github.com/Benzsoft/
 
 ---
 
-Designed by tem10w - [Visit Website](http://abc.com)
+Designed by tem10w - [Visit Website](http://abc.com)   
+
+Credits to [Daniel van Flymen](https://medium.com/@vanflymen) for the initial code
 
 ---
-
-![image](https://github.com/Benzsoft/OB1---Open-Blockchain-1/assets/30490739/fbce5dd3-06ad-4200-85aa-a9d3e4a60ce9)
