@@ -25,7 +25,7 @@ pip install Flask
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/OB1.git
+   git clone https://github.com/Benzsoft/OB1---Open-Blockchain-1.git
    ```
 2. Navigate to the project directory:
    ```
@@ -68,9 +68,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by the desire to understand and share knowledge about blockchain technology.
 
 ## Contact
+https://github.com/Benzsoft/
 
-- **Developer**: [Your Name]
-- **GitHub**: [github/your-username/OB1](https://github.com/your-username/OB1)
+- **Developer**: [Rubbens aka Benzsoft]
+- **GitHub**: [github.com/Benzsoft/](https://github.com/Benzsoft/)
 
 ---
 
